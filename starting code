@@ -1,0 +1,133 @@
+"""
+adventure= do you want to go?
+name= name, duh
+onward= are you sure you wish to continue?
+town_1= did you go into the first town???
+
+"""
+from time import sleep
+adventure = input ('Hello there adventurer, would you like to go on an adventure?(yes, no) ')
+if adventure.lower() in ['y', 'yes']:
+	sleep (2)
+	print ("I see. So you have the courage to step forth...")
+	name = input ('Tell me this , adventurer, what is your name? ')
+	name = name.title()
+	name= name.strip('.')
+	name = name.strip('!')
+	name = name.strip('?')
+	print ("Very well then, " +name+ " I warn you though, there is no turning back on this perilous journey." )
+	
+	onward = input ('Are you sure you wish to continue?(yes, no) ')
+	if onward.lower() in ['n', 'no']:
+		print ("\n THEN GET OUT YOU COWARD!!!")
+		
+	if onward.lower() in ['y', 'yes']:
+		print ("\n In that case, " +name+ ", our story begins here.")
+		sleep (1.5)
+		print ("\n ...")
+		sleep (1)
+		print ("\n")
+		sleep (1.5)
+		
+		print ("You are traveling a forrested trail and are feeling famished. Night is on its way as well.") 
+		town_1 = input ('In front of you there is a town. Do you wish to enter or keep walking?(enter, walk) ')
+		
+		if town_1.lower() in ['enter']:
+			print ("You proceed towards the town.")
+			print ("\n...")
+			print ("\n")
+			sleep (3)
+			print ('Looking around you see a tavern and enter it. Oddly enough the door sign specifies, "No Giants Allowed!"...')
+			sleep (2.3)
+			print ("\n")
+			print ("As you look around you stop in your tracks to see a room filled with midgets around you. Not gnomes,")
+			print ("midgets.")
+			sleep (2)
+			print ("There is a difference between the two. Remember to not mix them up...")
+			print ("\n")
+			sleep (4)
+			announce_option = input ("Would you like to announce yourself as the adventurer you are or quitely sit at the bar like a reasonable human being?(sit, announce) ")
+			if announce_option.lower() in ['announce']:
+				sleep (2)
+				print ("\n")
+				print ("As you begin to announce yourself as the legendary " +name+ " a burly and large-by-midget-standards man stands up.")
+				sleep (2)
+				print ("Slamming his large-by-midget-standards (LBMS) mug of beer on the table, he looks at you with fire in his gargantuan, captivating eyes.")
+				
+		
+		if town_1.lower() in ['walk']:
+			print ("You continue walking into the night. A mere hour into your trek it becomes too dark to see.")
+			camp_1 = input ('Would you like to stop and make camp?(yes, no) ')
+			sleep (2)
+			print ("\n ...")
+			print ("\n")
+			
+			if camp_1.lower() in ['yes', 'y']:
+				print ("\nAs you attempt to set up your tent you fumble in the black of night and drop something.")
+				sleep (2)
+				fire = input ('Would you like to start a fire so you can see easier?(yes, no) ')
+				if fire.lower() in ['yes', 'y']:
+					print ("\n")
+					sleep (2)
+					print ("After a mere few moments of work, you have a roaring fire warming you.")
+					sleep (1.4)
+					print ("Despite taking pleasure in your accomplishment, you hear a rustling in the woods around you.")
+					print ("Before you can do anything a group of mildly hairy bandits jumps out and executes you.")
+					sleep (2)
+					print ("\n Before you die you look up and see Shrek standing over you. Wasn't this supposed to be the pirate arc????")
+				if fire.lower() in ['no', 'n']:
+					print ("As you fumble in the darkness a pack of wolves eats you.")
+					sleep (1)
+					print ("You should have gone into the town.")
+					sleep (1.5)
+					print ("Must I say more?")
+					
+					
+			
+			if camp_1.lower() in ['no', 'n']:
+				print ("As you continue to walk forward you are stopped by a blinding light in your path. Before you stands the god and king of this world, Connor.")
+				print ("Looking mildly annoyed, he asks you why you insist on being such a bloody idiot when it comes to these decisions.")
+				print ("\n")
+				sleep (2)
+				irrelevant_answer = input ('Would you like to try to explain? (yes, no) ')
+				print ("\n")
+				if irrelevant_answer in ['no', 'n']:
+					sleep (2)
+					print ("Connor merely sighs in disappointment at your response. Looking weary of your stupidity, he walks up and places his hand on your forehead.")
+					print ('"Smite," he mumbles.')
+					sleep(1.5)
+					print ('After a glowing light, everything goes dark.')
+					sleep (1.5)
+					print ("\n ...")
+					sleep (1.5)
+					print ("\n")
+					print ("In case you can't tell, you died.")
+					sleep (2)
+					print ("Loser.")
+				if irrelevant_answer in ['yes', 'y']:
+					sleep (2)
+					print ("From the agitated look in his dreamy eyes, you can tell that Connor, who is still the god, isn't really interested in your explanation.")
+					print ('As you try to explain he merely cuts you off and says, "Honestly, I just do not have time for this. Kind of busy coding the rest of this game, you know?')
+					sleep (2.5)
+					print ("\n")
+					print ('After pondering for a moment, Connor looks at you and explains, "I am sorry. I was hoping I this power would not have to be used again after Megan Chase plagued the land.')
+					sleep (3)
+					print ("\n Connor walks up to you and places his hand to your head...")
+					sleep (3)
+					print ("\n")
+					print ("\n...")
+					print ("\n")
+					sleep (4)
+					print ('"Smite," he whispers.')
+					sleep (3)
+					print ("Everything goes dark.")
+					sleep (3)
+					print ("\n Now you, " +name+ ", know how Megan felt all those eons ago.")
+					
+					
+				
+
+if adventure.lower() in ['n', 'no']:
+	sleep(0.5)
+	print ("Then what the fuck are you bothering me for? GO AWAY!")
+
